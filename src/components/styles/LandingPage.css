@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Kanit500";
+    src: url('../../fonts/Roboto//Roboto-Medium.ttf');
+}
+
+.passion-music img{
+    width: 580px;
+}
+
+.container-fluid{
+    margin-top: 80px;
+}
+
+.passion-message{
+    padding-left: 440px !important;
+    padding-top: 100px;
+}
+
+.passion-message h1{
+    font-size: 3rem;
+    color: #32323d;
+}
+
+.passion-message h3{
+    font-size: 1.5rem;
+    color: #ef5466;
+}
+
+.premium-free{
+    margin-top: 35px;
+}
+
+.why-deezer{
+    background-color: #f9f9f9;
+    height: 500px;
+    position: relative;
+    top: -195px;
+}

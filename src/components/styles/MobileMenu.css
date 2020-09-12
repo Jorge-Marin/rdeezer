@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('../../fonts/Roboto/Roboto-Medium.ttf');
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+li{
+    padding: 15px;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.container-mobile-menu{
+    padding: 25px;
+    display: none;
+}
+
+@media screen and (max-width: 772px){
+    .container-mobile-menu{
+        display: block;
+    }
+}
