@@ -10,15 +10,15 @@ const NavBar = () => {
         <React.Fragment>
             <nav className="nav-bar">
                 <div className="container-logo">
-                    <a style={{cursor:"pointer", border:"none"}}>
+                    <a href="/Home" style={{cursor:"pointer", border:"none"}}>
                         <div className="logo"></div>
                     </a>
                 </div>
 
                 <div className="nav-links nav-item">
                     <ul className="nav-ul-links">
-                        <li className="nav-link">Download</li>
-                        <li className="nav-link">Plans</li>
+                        <li className="nav-link"><a href="/Download">Download</a></li>
+                        <li className="nav-link"><a href="/Plans">Plans</a></li>
                     </ul>
                 </div>
 

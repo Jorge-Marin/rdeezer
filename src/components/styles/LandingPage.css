@@ -46,6 +46,12 @@
     padding: 30px 165px 0 165px;
 }
 
+.nav-link a{
+    color: #32323d !important;
+    font-size: 20px;
+    text-decoration: none !important;
+}
+
 @media screen and (max-width: 1559px){
     .sell-container {
         padding: 65px 65px 0px 65px;

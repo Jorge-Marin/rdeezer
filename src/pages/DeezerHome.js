@@ -1,8 +1,8 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import PassionMusicPicture from '../images/LandingPage/first-picture.png';
 import '../components/styles/LandingPage.css';
 import PageButtons from '../components/PagesButtons';
+import SubsPlans from '../components/SubsPlans';
 
 class DeezerHome extends React.Component{
 
@@ -22,16 +22,27 @@ class DeezerHome extends React.Component{
                                 <PageButtons bgColor="#ef5466" 
                                              textColor="white" 
                                              bdrColor="#ef5466"
-                                             text="Deezer Premium"></PageButtons>
+                                             text="Deezer Premium"
+                                             padding="15px 40px"
+                                             marginRigth="25px"></PageButtons>
                                 <PageButtons bgColor="white" 
                                              textColor="#4a4a4a"
                                              bdrColor="#4a4a4a"
-                                             text="Deezer Premium"></PageButtons>
+                                             text="Deezer Premium"
+                                             padding="15px 40px"
+                                             marginRigth="0px"></PageButtons>
                             </div>
                         </div>
                     </header>
                 </div>
-
+                <SubsPlans titlePlan="Annual Plan"
+                           textPlan="Get a year of Deezer Premium for $59.90 instead of $71.88."
+                           marginBottom="10px"
+                           textButton="Subscribe"></SubsPlans>
+                <SubsPlans titlePlan="Deezer HiFi"
+                           textPlan="Stream in lossless quality for $8.99/month, 1 month free."
+                           marginBottom="0px"
+                           textButton="Learn more"></SubsPlans>
             </React.Fragment>
         );
     };

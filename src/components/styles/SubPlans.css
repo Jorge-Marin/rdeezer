@@ -1,0 +1,28 @@
+.subplans-container{
+    background-color: #f0f0f0;
+    padding: 10px 335px !important;
+    color: #32323d;
+}
+
+.subplans-buttons{
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+@media screen and (max-width: 1559px){
+    .subplans-container{
+        padding: 10px 80px !important;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .subplans-container{
+        text-align: center;
+    }
+
+    .subplans-buttons a{
+        max-width: 220px;
+        margin: auto !important;
+    }
+}
