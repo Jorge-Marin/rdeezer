@@ -1,0 +1,19 @@
+.page-buttons-a{
+    max-width: 240px;
+    padding: 15px 40px;
+    border-radius: 2rem;
+    font-family: Roboto;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 25px;
+    font-family: Roboto;
+}
+
+@media screen and (max-width: 780px){
+    .page-buttons-a{
+        max-width: 100%;
+        display: block;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+}

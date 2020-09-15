@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import PassionMusicPicture from '../images/LandingPage/first-picture.png';
 import '../components/styles/LandingPage.css';
-import Button from '../components/Button';
+import PageButtons from '../components/PagesButtons';
 
 class DeezerHome extends React.Component{
 
@@ -11,44 +11,27 @@ class DeezerHome extends React.Component{
             <React.Fragment>
                 <NavBar></NavBar>
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-xl-7">
-                            <div className="col-xl-12 passion-message">
-                                <h1>You bring the passion.<br></br>
-                                    We bring the music.</h1>
+                    <header className="header-page">
+                        <div className="col-12 col-xl-12 pretentational-container">
+                            <div className="sell-container">
+                                <h1>You bring the passion.
+                                <br></br>We bring the music.</h1>
                                 <h3>Try Deezer Premium free for 30 days*</h3>
-                                <div className="premium-free">
-                                    <Button backgroundColor="#ef5466" 
-                                    borderColor="#ef5466"
-                                    textColor="white" 
-                                    paddingWidth="40px" 
-                                    paddingHeigth="15px"
-                                    text="Deezer Premium" 
-                                    url="#"
-                                    fontsize="18px"
-                                    marginRigth="15px"></Button>
-                                    <Button backgroundColor="white" 
-                                    borderColor="#000"
-                                    textColor="#000" 
-                                    paddingWidth="40px" 
-                                    paddingHeigth="15px"
-                                    text="Deezer free" 
-                                    url="#"
-                                    fontsize="18px"
-                                    marginRigth="15px"></Button>
-                                </div>
+                            </div>
+                            <div className="premium-free">
+                                <PageButtons bgColor="#ef5466" 
+                                             textColor="white" 
+                                             bdrColor="#ef5466"
+                                             text="Deezer Premium"></PageButtons>
+                                <PageButtons bgColor="white" 
+                                             textColor="#4a4a4a"
+                                             bdrColor="#4a4a4a"
+                                             text="Deezer Premium"></PageButtons>
                             </div>
                         </div>
-                        <div className="col-xl-5">
-                            <div className="passion-music">
-                                <img src={PassionMusicPicture}/>
-                            </div>
-                        </div>
-                    </div>
+                    </header>
                 </div>
-                <div className="container-fluid why-deezer">
 
-                </div>
             </React.Fragment>
         );
     };
@@ -56,3 +39,16 @@ class DeezerHome extends React.Component{
 }
 
 export default DeezerHome;
+
+/*
+    <div className="col-12 free-premium-btns">
+        <PageButtons bgColor="#ef5466"
+                textColor="white"
+                bdrColor="ef5466"
+                text="Deezer Premiun"></PageButtons>
+        <PageButtons bgColor="white"
+                textColor="#000"
+                bdrColor="#000"
+                text="Deezer Free"></PageButtons>
+    </div>
+*/ 

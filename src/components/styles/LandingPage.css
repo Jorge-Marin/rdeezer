@@ -3,36 +3,138 @@
     src: url('../../fonts/Roboto//Roboto-Medium.ttf');
 }
 
-.passion-music img{
-    width: 580px;
-}
-
-.container-fluid{
+.header-page{
+    margin: auto;
+    box-sizing: border-box;
     margin-top: 80px;
 }
 
-.passion-message{
-    padding-left: 440px !important;
-    padding-top: 100px;
+.pretentational-container{
+    background-image: url('../../images/LandingPage/first-picture.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    height: 440px;
+    margin-top: 80px;
+    display: table;
+    background-size: 680px;
 }
 
-.passion-message h1{
+.sell-container{
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 80px 165px 0px 165px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sell-container h1{
     font-size: 3rem;
     color: #32323d;
 }
 
-.passion-message h3{
-    font-size: 1.5rem;
+.sell-container h3{
+    font-size: 2rem;
     color: #ef5466;
 }
 
 .premium-free{
-    margin-top: 35px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1440px;
+    padding: 30px 165px 0 165px;
 }
 
-.why-deezer{
-    background-color: #f9f9f9;
-    height: 500px;
-    position: relative;
-    top: -195px;
+@media screen and (max-width: 1559px){
+    .sell-container {
+        padding: 65px 65px 0px 65px;
+    }
+
+    .sell-container h1, .sell-container h3{
+        width: 430px;
+    }
+
+    .premium-free{
+        padding: 40px 65px 0 65px;
+    }
+
+    .pretentational-container{
+        height: 610px;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .header-page{
+        margin: auto;
+        box-sizing: border-box;
+        height: 800px;
+    }
+
+    .sell-container h1{
+        font-size: 2.7rem;
+        width: 100%;
+    }
+
+    .sell-container h3{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .sell-container {
+        padding: 70px 45px 50px 45px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .pretentational-container {
+        background-position: center 400px;
+        height: 80%;
+        margin-top: 80px;
+        display: block;
+        background-size: 650px;
+    }
+
+    .premium-free{
+        padding: 0px 45px;
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 780px){
+    .header-page{
+        margin: auto;
+        box-sizing: border-box;
+        height: 800px;
+    }
+
+    .sell-container h1{
+        font-size: 2.5rem;
+    }
+
+    .sell-container h3{
+        font-size: 1.5rem;
+    }
+
+    .sell-container {
+        padding: 0px 45px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .pretentational-container {
+        background-position: center 350px;
+        height: 70%;
+        margin-top: 80px;
+        display: table;
+        background-size: 450px;
+    }
+
+    .premium-free {
+        padding: 10px 0 0;
+    }
 }

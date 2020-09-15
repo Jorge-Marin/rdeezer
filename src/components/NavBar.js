@@ -44,7 +44,7 @@ const NavBar = () => {
                 </div>
             </nav>
 
-            <div className="hamburger" onClick={()=>(setMobileMenu(!showMobileMenu))}>
+            <div className="hamburger" onClick={()=>{setMobileMenu(!showMobileMenu)}}>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
