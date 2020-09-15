@@ -1,0 +1,9 @@
+.reason-body{
+    padding: 0 70px 0 0 !important;
+}
+
+@media screen and (max-width: 1559px){
+    .reasons {
+        padding: 70px 50px 70px 130px;
+    }
+}

@@ -3,6 +3,9 @@ import NavBar from '../components/NavBar';
 import '../components/styles/LandingPage.css';
 import PageButtons from '../components/PagesButtons';
 import SubsPlans from '../components/SubsPlans';
+import SheranPicture from '../images/LandingPage/second-picture.png';
+import ReasonDeezer from '../components/ReasonDeezer';
+import RedBanner from '../components/RedBanner.js';
 
 class DeezerHome extends React.Component{
 
@@ -35,6 +38,32 @@ class DeezerHome extends React.Component{
                         </div>
                     </header>
                 </div>
+                <div className="container-fluid why-deezer">
+                    <div className="row ">
+                        <div className="col-lg-3 col-xl-4 picture-why-deezer">
+                            <img src={SheranPicture}></img>
+                        </div>
+                        <div className="col-sm-12 col-md-12 col-lg-9 col-xl-7 reasons-why-deezer">
+                            <div className="row">
+                                <div className="col-12 title-reasons">
+                                    <h1>Why deezer?</h1>
+                                </div>
+                                <div className="row reasons">
+                                    <ReasonDeezer title="A world of music in your pocket." 
+                                                  reason="Find new loves and old favourites from over 56 million tracks."></ReasonDeezer>
+                                    <ReasonDeezer title="No WiFi? No problem." 
+                                                  reason="With Deezer Premium, you don't need to be connected to enjoy your favourite tracks."></ReasonDeezer>
+                                    <ReasonDeezer title="Craft your collection." 
+                                                  reason="Create playlists from millions of tracks and take them with you wherever you go."></ReasonDeezer>
+                                    <ReasonDeezer title="Made for you." 
+                                                  reason="Flow gets to know what you like and what you don't. Discover your personal soundtrack."></ReasonDeezer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <RedBanner title="Always with you"
+                           text="Download your music and take it from your morning run to dinner out with Deezer Premium. Available on all your devices, all the time, even without WiFi or 4G."></RedBanner>
                 <SubsPlans titlePlan="Annual Plan"
                            textPlan="Get a year of Deezer Premium for $59.90 instead of $71.88."
                            marginBottom="10px"
