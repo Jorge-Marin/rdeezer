@@ -6,9 +6,9 @@ import SubsPlans from '../components/SubsPlans';
 import SheranPicture from '../images/LandingPage/second-picture.png';
 import ReasonDeezer from '../components/ReasonDeezer';
 import RedBanner from '../components/RedBanner.js';
+import WaitingSection from '../images/waiting-section.jpg';
 
 class DeezerHome extends React.Component{
-
     render(){
         return (
             <React.Fragment>
@@ -64,6 +64,10 @@ class DeezerHome extends React.Component{
                 </div>
                 <RedBanner title="Always with you"
                            text="Download your music and take it from your morning run to dinner out with Deezer Premium. Available on all your devices, all the time, even without WiFi or 4G."></RedBanner>
+                <div className="waitsection">
+                    <h1>Seccion en Espera</h1>
+                    <img src={WaitingSection}></img>
+                </div>
                 <SubsPlans titlePlan="Annual Plan"
                            textPlan="Get a year of Deezer Premium for $59.90 instead of $71.88."
                            marginBottom="10px"

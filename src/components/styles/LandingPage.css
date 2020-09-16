@@ -73,6 +73,11 @@
     padding: 70px 270px 70px 50px;
 }
 
+.waitsection{
+    text-align: center;
+    margin: 80px 0;
+}
+
 @media screen and (max-width: 1559px){
     .sell-container {
         padding: 65px 65px 0px 65px;
