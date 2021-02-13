@@ -21,7 +21,7 @@ const NavBar = () => {
                         <li className="nav-link"><a href="/Plans">Plans</a></li>
                     </ul>
                 </div>
-
+                <div></div>
                 <div className="nav-item ls-btns">
                     <Button backgroundColor="white" 
                             borderColor="#2d96c8"
