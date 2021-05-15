@@ -6,17 +6,20 @@ on: [pull_request, workflow_dispatch]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - name: yarn install,, build and test
-        run: |
-          sudo chown -R $USER /usr/local/lib/node_modules
-          npm install -g yarn
-          yarn install
-          yarn build
-      - name: Archive Build
+      - name: Checkout Repo
+        uses: actions/checkout@v2.3.2
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Tests
+        env:
+          CI: true
+        run: npm test
+      - name: Build
+        run: npm run build
+      - name: Archive Production Artifact
         uses: actions/upload-artifact@v2
         with:
           name: build
@@ -27,13 +30,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Download Build
+      - name: Checkout Repo
+        uses: actions/checkout@v2.3.2
+      - name: Download Artifact
         uses: actions/download-artifact@v2
         with:
           name: build
           path: build
-      - name: Depoy to Firebase
+      - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
