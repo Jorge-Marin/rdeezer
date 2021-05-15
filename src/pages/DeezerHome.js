@@ -41,7 +41,7 @@ class DeezerHome extends React.Component{
                 <div className="container-fluid why-deezer">
                     <div className="row ">
                         <div className="col-lg-3 col-xl-4 picture-why-deezer">
-                            <img src={SheranPicture}></img>
+                            <img src={SheranPicture} alt="picture of sheran song"></img>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-9 col-xl-7 reasons-why-deezer">
                             <div className="row">
@@ -66,7 +66,7 @@ class DeezerHome extends React.Component{
                            text="Download your music and take it from your morning run to dinner out with Deezer Premium. Available on all your devices, all the time, even without WiFi or 4G."></RedBanner>
                 <div className="waitsection">
                     <h1>Seccion en Espera</h1>
-                    <img src={WaitingSection}></img>
+                    <img src={WaitingSection} alt="seccion en espera"></img>
                 </div>
                 <SubsPlans titlePlan="Annual Plan"
                            textPlan="Get a year of Deezer Premium for $59.90 instead of $71.88."
