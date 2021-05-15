@@ -9,7 +9,7 @@ import SignUp from '../pages/SignUp';
 const App = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/home" component={DeezerHome}></Route>
+            <Route exact path="/" component={DeezerHome}></Route>
             <Route exact path="/Download" component={Download}></Route>
             <Route exact path="/Plans" component={Plans}></Route>
             <Route exact path="/LogIn" component={LogIn}></Route>
