@@ -41,7 +41,7 @@ class DeezerHome extends React.Component{
                 <div className="container-fluid why-deezer">
                     <div className="row ">
                         <div className="col-lg-3 col-xl-4 picture-why-deezer">
-                            <img src={SheranPicture} alt="picture of sheran song"></img>
+                            <img src={SheranPicture} alt="sheran song"></img>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-9 col-xl-7 reasons-why-deezer">
                             <div className="row">
